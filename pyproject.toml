@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "lg"
+version = "0.1.0"
+description = ""
+authors = ["sandeepse3 <sandeepse3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+langgraph = "^0.2.39"
+langgraph-sdk = "^0.1.33"
+langgraph-checkpoint-sqlite = "^2.0.0"
+langsmith = "^0.1.136"
+langchain-community = "^0.3.3"
+langchain-core = "^0.3.12"
+langchain-openai = "^0.2.3"
+notebook = "^7.2.2"
+tavily-python = "^0.5.0"
+wikipedia = "^1.4.0"
+trustcall = "^0.0.26"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

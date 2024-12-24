@@ -90,6 +90,7 @@ for event in graph.stream({"messages": [HumanMessage(content="Add 3 and 4.")]}, 
     event['messages'][-1].pretty_print()
 
 # %%
+# Debugging
 state = graph.get_state(thread)
 state.next
 

@@ -8,6 +8,7 @@ from pydantic import BaseModel, field_validator, ValidationError
 load_dotenv()
 from langgraph.graph import StateGraph, START, END
 from typing import Literal
+from IPython.display import Image, display
 # %%
 # Different ways to define a state
 # class State(TypedDict):
@@ -30,6 +31,8 @@ class State(BaseModel):
         if value not in ["happy", "sad"]:
             raise ValueError("Input should be 'happy' or 'sad'")
         return value
+    class Config:
+        validate_assignment = True
 # %%
 def node1(state:State) -> State:
     print("---Node 1---")
